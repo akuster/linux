@@ -62,6 +62,12 @@ config ARCH_MESON
 	help
 	  This enables support for the Amlogic S905 SoCs.
 
+config ARCH_MESON64_ODROIDC2
+        bool "Hardkernel's ODROID-C2 board"
+        help
+          This enables support for the board ODROID-C2 of Hardkernel
+          which is based on ARMv8 SoC of AMLogic, Inc.
+
 config ARCH_MVEBU
 	bool "Marvell EBU SoC Family"
 	select ARMADA_AP806_CORE_CLK

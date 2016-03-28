@@ -1,0 +1,27 @@
+/*
+ * AMLogic's S905 based ODROID-C2 board device tree source
+ *
+ * Copyright (c) 2015 Hardkernel Co., Ltd.
+ *                    http://www.hardkernel.com
+ *
+ * Device tree source file for Hardkernel's ODROID-C2 board based on AMLogic's
+ * S905 SoC.
+ *
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License version 2 as
+ * published by the Free Software Foundation.
+ */
+
+#include "meson-gxbb.dtsi"
+
+/ {
+	compatible = "hardkernel,odroid-c2", "amlogic,meson-gxbb";
+
+	chosen {
+		stdout-path = "serial0:115200n8";
+	};
+};
+
+&uart_AO {
+	status = "okay";
+};
